@@ -1,9 +1,9 @@
 body{
     background-color: rgba(128, 128, 128, 0.312);
 }
-table, thead, td{
+/* table, thead, td{
     border: 2px solid green;
-}
+} */
 
 h2, h3{
     text-align: center;
@@ -14,4 +14,71 @@ h1>img{
     width: 40px;
     height: 30px;
 }
+form{
+    max-width: 500px;
+    margin: auto;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.applicants-table{
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.applicants-table thead{
+    background-color: #009879;
+}
+.applicants-table thead tr{
+    background-color: transparent;
+    color: #ffffff;
+    text-align: left;
+}
+.applicants-table th, .applicants-table td{
+    padding: 12px 15px;
+}
+.applicants-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    text-transform: capitalize;
+}
 
+.applicants-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.applicants-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.hide{
+    display: none;
+}
+
+.error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+}
+label{
+    font-size: 16px;
+    font-weight: 600;
+}
+input[type='text'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }

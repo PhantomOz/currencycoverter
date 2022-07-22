@@ -59,7 +59,7 @@ function onSubmit(e) {
   if (nameInput.value === "" || emailInput.value === "") {
     msg.classList.add("error");
     msg.innerHTML = "Please enter your name and email";
-    setTimeout(() => msg.remove(), 5000);
+    setTimeout(() => {msg.classList.remove('error'); msg.innerHTML = ''}, 5000);
   } else {
     const li = document.createElement("li");
     li.appendChild(
